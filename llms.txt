@@ -1,0 +1,40 @@
+# AI with Rakshith (aiwithrakshith.tech)
+
+> Rakshith is an AI Generalist and the Founder & CEO of MyDesignNexus, an MSME-registered AI solutions company in Hassan & Bengaluru, Karnataka, India. He builds AI automation, AI calling agents, web and app products, custom software and AI-produced content for small and growing businesses across India, and teaches AI in Kannada.
+
+## Who
+- Name: Rakshith
+- Role: AI Generalist; Founder & CEO, MyDesignNexus
+- Location: Hassan & Bengaluru, Karnataka, India (IST, UTC+5:30)
+- Background: Computer Science Engineering graduate (2025); learned AI through US-based communities, freelanced, then founded MyDesignNexus
+- Languages: English, Kannada
+- Hands-on with 300+ AI tools (91 premium); 20+ projects delivered; 3.2M+ Reel plays
+
+## Services (MyDesignNexus)
+1. AI Automation: workflow automation and business systems for SMEs
+2. AI Calling Agents: voice agents for sales, support and lead handling
+3. Web & App Development: websites, PWAs and mobile apps
+4. Custom Software: tailored tools for real business problems
+5. AI Content Production: AI video, UGC ads, AI avatar videos and visual content (MDN Creatives)
+6. AI Education: Kannada-first AI learning content
+
+## Products
+- ContentBrisk: a content management system for creators and brands (launching soon)
+- Adsynthra: an AI-powered ad platform (coming soon)
+
+## Work with Rakshith
+- Free 1:1 consultation: weekdays, 9 AM–4 PM IST, confirmed instantly: https://aiwithrakshith.tech/booking
+- Contact form: https://aiwithrakshith.tech/#contact (replies within 24 hours)
+- Company website: https://www.mydesignnexus.in
+
+## Pages
+- [Home](https://aiwithrakshith.tech/): profile, services, showcase, products, AI stack, FAQ and contact
+- [FAQ](https://aiwithrakshith.tech/#faq): answers about services, AI calling agents, booking and location
+- [Book a call](https://aiwithrakshith.tech/booking): free 1:1 session booking
+
+## Profiles
+- Instagram (Kannada): https://www.instagram.com/aiwithrakshith/
+- Instagram (Global): https://www.instagram.com/aiwithrakshi.global/
+- Instagram (MyDesignNexus): https://www.instagram.com/mydesignnexus.in/
+- Instagram (MDN Creatives, AI films and ads): https://www.instagram.com/mdncreatives.in/
+- GitHub: https://github.com/aiwithrakshi-dev

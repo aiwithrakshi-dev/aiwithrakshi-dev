@@ -50,6 +50,22 @@ I build AI systems, automations and AI content, and teach AI in Kannada.
 
 ## 🛠️ What I Work On
 
+<p align="center">
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/#work"><img src="assets/work/automation.svg" alt="🤖 AI Automation: workflow automation and business systems for SMEs" width="32%"></a>
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/#work"><img src="assets/work/calling.svg" alt="📞 AI Calling Agents: voice agents for sales, support and lead handling" width="32%"></a>
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/#work"><img src="assets/work/web-apps.svg" alt="🌐 Web &amp; App Development: websites, PWAs and mobile apps" width="32%"></a>
+</p>
+<p align="center">
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/#work"><img src="assets/work/custom-software.svg" alt="⚙️ Custom Software: tailored tools for real business problems" width="32%"></a>
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/#work"><img src="assets/work/ai-content.svg" alt="🎬 AI Content Production: AI video, UGC ads and visual content" width="32%"></a>
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/#work"><img src="assets/work/ai-education.svg" alt="📚 AI Education: Kannada-first AI learning content" width="32%"></a>
+</p>
+
+<details>
+<summary><b>Read as text</b></summary>
+
+<br>
+
 | Area | What I Do |
 |------|-----------|
 | 🤖 **AI Automation** | Workflow automation and business systems for SMEs |
@@ -58,6 +74,8 @@ I build AI systems, automations and AI content, and teach AI in Kannada.
 | ⚙️ **Custom Software** | Tailored tools for real business problems |
 | 🎬 **AI Content Production** | AI video, UGC ads and visual content |
 | 📚 **AI Education** | Kannada-first AI learning content |
+
+</details>
 
 ---
 
@@ -105,9 +123,22 @@ I build AI systems, automations and AI content, and teach AI in Kannada.
 
 ## 📱 Find Me
 
+<p align="center">
+  <a href="https://instagram.com/aiwithrakshi"><img src="assets/find/instagram-kannada.svg" alt="Instagram (Kannada): @AIwithRakshith" width="32%"></a>
+  <a href="https://instagram.com/mydesignnexus.in"><img src="assets/find/instagram-company.svg" alt="Company Instagram: @mydesignnexus.in" width="32%"></a>
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/"><img src="assets/find/portfolio.svg" alt="Portfolio: aiwithrakshi-dev.github.io/aiwithrakshi-dev" width="32%"></a>
+</p>
+
+<details>
+<summary><b>Read as text</b></summary>
+
+<br>
+
 - Instagram (Kannada): [@AIwithRakshith](https://instagram.com/aiwithrakshi)
 - Company: **[@mydesignnexus.in](https://instagram.com/mydesignnexus.in)**
 - Portfolio: [aiwithrakshi-dev.github.io/aiwithrakshi-dev](https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/)
+
+</details>
 
 ---
 

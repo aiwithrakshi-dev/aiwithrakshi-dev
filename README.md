@@ -57,6 +57,37 @@ I build AI systems, automations and AI content, and teach AI in Kannada.
 
 ---
 
+## 🧰 Premium AI Tools I Use
+
+<p align="center">
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/#stack">
+    <img src="assets/tools.svg" alt="Premium AI tools I use: 91 tools across 11 categories" width="100%">
+  </a>
+</p>
+
+<details>
+<summary><b>See the full list as text</b></summary>
+
+<br>
+
+| Category | Tools |
+|----------|-------|
+| **AI Chat** | DeepSeek, ChatGPT, Claude, Grok, NotebookLM, Gemini, Manus, Perplexity, Ollama, MiniMax |
+| **Build & Code** | Bolt.new, Lovable, Emergent, Replit, GitHub, Cursor, Antigravity |
+| **Image** | Leonardo.ai, Ideogram, Adobe Firefly, Midjourney, Magnific, OpenArt, Kie.ai, Kalakar, Krea, ComfyUI, Picsart, Enhancor |
+| **Video** | Higgsfield, Flow, Adobe Premiere Pro, Runway, VEED, Pika, Kling, Descript, Remotion, Opus Clip, Hailuo, Sora, Luma, LTX Studio, InVideo AI, vidIQ, Filmora |
+| **Audio & Voice** | Mirelo.ai, ElevenLabs, Retell AI, Twilio, Suno, Sarvam AI, Vapi |
+| **Automation** | n8n, Zapier, Make.com, Apify, MailerLite, Blotato, Firecrawl |
+| **Design** | Canva, Figma, Magic Patterns, Lovart, Framer, Dora Run, Gamma, Mobbin |
+| **Productivity** | ClickUp, Loom, Slack, Notion, Wispr Flow, Grammarly, Superhuman, Linear, GravityWrite, Linktree |
+| **Backend & Deploy** | Cloudflare, Supabase, Clerk, Resend, Vercel, OpenRouter, Google Firebase, Hugging Face, Replicate, Railway |
+| **3D** | Meshy, Tripo3D |
+| **Payments** | Razorpay |
+
+</details>
+
+---
+
 ## 📱 Find Me
 
 - Instagram (Kannada): [@AIwithRakshith](https://instagram.com/aiwithrakshi)

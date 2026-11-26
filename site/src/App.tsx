@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { profile, projects, process, type Status } from './data/profile'
+import { profile, areas, products, process } from './data/profile'
 type Tool = { n: string; d: string; c: string; l?: string; b?: string }
 const BASE = import.meta.env.BASE_URL
 
@@ -38,7 +38,7 @@ function useClock() {
   return { time: fmt.format(now), hour }
 }
 
-function CountUp({ to, suffix = '' }: { to: number; suffix?: string }) {
+function CountUp({ to, suffix = '', decimals = 0 }: { to: number; suffix?: string; decimals?: number }) {
   const [v, setV] = useState(0)
   const ref = useRef<HTMLSpanElement>(null)
   useEffect(() => {
@@ -51,8 +51,8 @@ function CountUp({ to, suffix = '' }: { to: number; suffix?: string }) {
       io.disconnect()
       const start = performance.now()
       const tick = (t: number) => {
-        const p = Math.min(1, (t - start) / 1200)
-        setV(Math.round(to * (1 - Math.pow(1 - p, 3))))
+        const p = Math.min(1, (t - start) / 1300)
+        setV(to * (1 - Math.pow(1 - p, 3)))
         if (p < 1) requestAnimationFrame(tick)
       }
       requestAnimationFrame(tick)
@@ -60,7 +60,7 @@ function CountUp({ to, suffix = '' }: { to: number; suffix?: string }) {
     io.observe(el)
     return () => io.disconnect()
   }, [to])
-  return <span ref={ref}>{v}{suffix}</span>
+  return <span ref={ref}>{v.toFixed(decimals)}{suffix}</span>
 }
 
 const NAV = [
@@ -149,7 +149,7 @@ function Hero() {
             <img src={`${BASE}img/avatar-square.webp`} alt="" width="64" height="64" />
             <div>
               <b>{profile.name}</b>
-              <span><i className="pulse" /> New post · AI with Rakshith</span>
+              <span><i className="pulse" /> New post · @AIwithRakshith</span>
             </div>
           </div>
           <div className="dots" aria-hidden="true"><i /><i /><i /></div>
@@ -165,11 +165,12 @@ function Hero() {
 
         <div className="title-block">
           <h1 className="chrome">RAKSHITH</h1>
-          <p className="hello">What's up, guys</p>
-          <p className="lede">{profile.tagline} Founder of <b>MyDesignNexus</b> and creator of <b>AI with Rakshith</b>.</p>
+          <p className="hello">{profile.role}</p>
+          <p className="lede">{profile.tagline}</p>
+          <p className="loc"><span aria-hidden="true">📍</span> {profile.location}</p>
           <div className="hero-ctas">
             <a className="btn primary" href="#work">See my work</a>
-            <a className="btn ghost" href="#stack">My 91 AI tools</a>
+            <a className="btn ghost" href="#stack">My AI stack</a>
           </div>
         </div>
 
@@ -188,14 +189,14 @@ function Hero() {
         </div>
         <div className="widget weather glass">
           <MIcon name="night" size={54} label="Night sky" />
-          <div><b>{greet}</b><small>Building something new</small></div>
+          <div><b>{greet}</b><small>Hassan &amp; Bengaluru</small></div>
         </div>
         <ControlCenter />
         <a className="widget now glass" href="#work" aria-label="Now building ContentBrisk">
-          <span className="now-top"><span>NOW BUILDING</span><span className="live"><i className="pulse" /> Pre-launch</span></span>
+          <span className="now-top"><span>NOW BUILDING</span><span className="live"><i className="pulse" /> Launching soon</span></span>
           <b>CONTENTBRISK</b>
           <span className="bar" aria-hidden="true"><i /></span>
-          <small>AI content studio · waitlist open</small>
+          <small>Content management for creators and brands</small>
         </a>
       </div>
 
@@ -207,19 +208,12 @@ function Hero() {
 }
 
 function About() {
-  const stats = [
-    { n: 7, s: '', l: 'Products built' },
-    { n: 91, s: '', l: 'AI tools in my stack' },
-    { n: 3, s: '', l: 'Content channels' },
-    { n: 6, s: '', l: 'Step build process' },
-  ]
   return (
     <section id="about" className="section about">
       <div className="about-card glass reveal">
-        <div className="tag">Who am I?</div>
-        <h2 className="serif">Designer first.<br /><em>Builder now.</em></h2>
-        {profile.about.map((p, i) => <p key={i}>{p}</p>)}
-        <ul className="chips">{profile.services.map(s => <li key={s}>{s}</li>)}</ul>
+        <div className="tag">About me</div>
+        <h2 className="serif">AI Generalist.<br /><em>Founder.</em></h2>
+        <ul className="facts">{profile.about.map((p, i) => <li key={i}>{p}</li>)}</ul>
       </div>
       <div className="intro-card glass reveal">
         <div className="intro-head"><span className="pill">FOUNDER</span><h3>Introduce<br />my self</h3></div>
@@ -229,8 +223,8 @@ function About() {
             <div className="cam-modes" aria-hidden="true"><span>SLO-MO</span><span>VIDEO</span><b>PHOTO</b><span>PORTRAIT</span></div>
           </div>
           <div className="stat-grid">
-            {stats.map(s => (
-              <div className="stat" key={s.l}><b><CountUp to={s.n} suffix={s.s} /></b><span>{s.l}</span></div>
+            {profile.stats.map(st => (
+              <div className="stat" key={st.label}><b><CountUp to={st.value} decimals={st.decimals} suffix={st.suffix} /></b><span>{st.label}</span></div>
             ))}
           </div>
         </div>
@@ -239,29 +233,37 @@ function About() {
   )
 }
 
-const STATUS_TONE: Record<Status, string> = {
-  Live: '#34d399', Active: '#34d399', Prototype: '#22d3ee', 'Pre-launch': '#facc15', Publishing: '#facc15', 'In design': '#a78bfa',
-}
-
 function Work() {
   return (
     <section id="work" className="section">
       <header className="sec-head reveal">
-        <span className="tag">Selected work</span>
-        <h2 className="display">What I've <em className="serif">built</em></h2>
-        <p className="muted">My own products. Client work at MyDesignNexus is under NDA.</p>
+        <span className="tag">What I work on</span>
+        <h2 className="display">What I <em className="serif">do</em></h2>
       </header>
-      <div className="work-grid">
-        {projects.map((p, i) => (
-          <article key={p.name} className="work-card glass reveal" style={{ ['--accent' as string]: p.accent, transitionDelay: `${i * 60}ms` }}>
+      <div className="area-grid">
+        {areas.map((a, i) => (
+          <article key={a.title} className="area glass reveal" style={{ ['--accent' as string]: a.accent, transitionDelay: `${i * 60}ms` }}>
+            <span className="area-icon"><MIcon name={a.icon} size={24} /></span>
+            <h3>{a.title}</h3>
+            <p>{a.text}</p>
+            <span className="wc-glow" aria-hidden="true" />
+          </article>
+        ))}
+      </div>
+
+      <header className="sec-head reveal products-head">
+        <span className="tag">My products</span>
+        <h2 className="display">Built <em className="serif">by me</em></h2>
+      </header>
+      <div className="work-grid two">
+        {products.map((p, i) => (
+          <article key={p.name} className="work-card glass reveal" style={{ ['--accent' as string]: p.accent, transitionDelay: `${i * 80}ms` }}>
             <div className="wc-top">
               <span className="wc-kind">{p.kind}</span>
-              <span className="wc-status"><i style={{ background: STATUS_TONE[p.status] }} />{p.status}</span>
+              <span className="wc-status"><i style={{ background: '#facc15' }} />{p.status}</span>
             </div>
             <h3>{p.name}</h3>
             <p>{p.blurb}</p>
-            <ul className="wc-stack">{p.stack.map(s => <li key={s}>{s}</li>)}</ul>
-            {p.link && <a className="wc-link" href={p.link}>Open →</a>}
             <span className="wc-glow" aria-hidden="true" />
           </article>
         ))}
@@ -309,7 +311,7 @@ function Stack() {
     <section id="stack" className="section">
       <header className="sec-head reveal">
         <span className="tag">My AI stack</span>
-        <h2 className="display"><CountUp to={91} /> tools I <em className="serif">use daily</em></h2>
+        <h2 className="display"><CountUp to={91} /> premium tools I <em className="serif">use</em></h2>
       </header>
       <div className="stack-controls glass">
         <label className="search">
@@ -346,8 +348,8 @@ function Stack() {
 
 function Contact() {
   const links = [
-    { label: 'GitHub', url: profile.github },
     ...profile.socials,
+    { label: 'GitHub', url: profile.github },
     ...(profile.email ? [{ label: profile.email, url: `mailto:${profile.email}` }] : []),
   ]
   return (
@@ -356,7 +358,7 @@ function Contact() {
         <div>
           <span className="tag">Collaboration</span>
           <h2 className="serif big">Let's build<br /><em>together.</em></h2>
-          <p>Want an AI agent, an automation, a new app or a redesign of the one you have? Tell me what you're working on.</p>
+          <p>Need an AI automation, a calling agent, an app or AI content for your business? Tell me what you're working on.</p>
           <ul className="links">
             {links.map(l => <li key={l.label}><a href={l.url} target="_blank" rel="noopener noreferrer">{l.label} ↗</a></li>)}
           </ul>
@@ -365,15 +367,26 @@ function Contact() {
       </div>
       <footer className="foot glass">
         <span className="fp"><MIcon name="fingerprint" size={26} /></span>
-        <p>KEEP BUILDING, EVEN WHEN BUSY</p>
+        <p>{profile.motto.toUpperCase()}</p>
         <span className="copy">© {new Date().getFullYear()} {profile.name} · MyDesignNexus</span>
       </footer>
     </section>
   )
 }
 
+/* Jump to #section links (e.g. from the README) once the page has rendered */
+function useHashJump() {
+  useEffect(() => {
+    const id = decodeURIComponent(window.location.hash.slice(1))
+    if (!id) return
+    const t = window.setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'auto', block: 'start' }), 60)
+    return () => window.clearTimeout(t)
+  }, [])
+}
+
 export default function App() {
   useReveal()
+  useHashJump()
   return (
     <>
       <div className="bg" aria-hidden="true" />

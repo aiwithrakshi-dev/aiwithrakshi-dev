@@ -277,3 +277,28 @@ button { font: inherit; color: inherit; }
   .reveal { opacity: 1; transform: none; }
 }
 .nav { background: linear-gradient(160deg, rgba(30,32,42,.94), rgba(12,13,18,.96)); }
+
+/* ---------- Profile text update ---------- */
+.loc { margin: 10px 0 0; font-size: 14px; font-weight: 700; color: #cfd3df; }
+.facts { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+.facts li { position: relative; padding-left: 22px; color: #d4d7e2; }
+.facts li::before { content: ''; position: absolute; left: 0; top: .62em; width: 9px; height: 9px; border-radius: 50%; background: linear-gradient(135deg, var(--violet), var(--cyan)); }
+.area-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.area { position: relative; overflow: hidden; padding: 24px; display: grid; gap: 8px; align-content: start; transition: transform .3s, border-color .3s; }
+.area:hover { transform: translateY(-6px); border-color: color-mix(in srgb, var(--accent) 55%, transparent); }
+.area-icon { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; background: color-mix(in srgb, var(--accent) 22%, #14161e); color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); }
+.area h3 { margin: 8px 0 0; font: 400 28px/1.05 var(--display); letter-spacing: .02em; text-transform: uppercase; }
+.area p { margin: 0; color: #cdd1dd; }
+.products-head { margin-top: 64px; }
+.work-grid.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.work-grid.two .work-card { min-height: 220px; }
+.work-grid.two .work-card h3 { font-size: clamp(40px, 5vw, 60px); }
+@media (max-width: 1100px) { .area-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .area-grid, .work-grid.two { grid-template-columns: 1fr; }
+  .products-head { margin-top: 48px; }
+}
+.stat b { font-size: clamp(34px, 3.4vw, 50px); letter-spacing: .01em; white-space: nowrap; }
+html { scroll-padding-top: 132px; }
+.stack-controls { background: linear-gradient(160deg, rgba(30,32,42,.97), rgba(12,13,18,.98)); }
+@media (max-width: 600px) { html { scroll-padding-top: 124px; } .stat b { font-size: 44px; } }

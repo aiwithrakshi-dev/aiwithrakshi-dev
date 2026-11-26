@@ -3,39 +3,51 @@
 export const profile = {
   name: 'Rakshith',
   handle: 'aiwithrakshi-dev',
-  role: 'Founder · MyDesignNexus',
-  tagline: 'I build AI products, automations and apps for businesses.',
-  disciplines: ['AI', 'UI/UX', 'APPS'],
+  role: 'AI Generalist & Founder, MyDesignNexus',
+  tagline: 'I build AI systems, automations and AI content, and teach AI in Kannada.',
+  location: 'Hassan & Bengaluru, Karnataka, India',
+  disciplines: ['AI', 'APPS', 'CONTENT'],
   about: [
-    'I started in design, and that is still how I think: research first, then systems, then screens.',
-    'Today I run MyDesignNexus, an agency building websites, apps and AI systems for businesses in India, and I teach AI for business on my AI with Rakshith channels in Kannada and English.',
-    'Most of my work now is AI that does real jobs: voice agents that make calls, research that runs itself, and internal tools that automate a whole team.',
+    'Founder & CEO of MyDesignNexus, an MSME-registered AI solutions company.',
+    'Computer Science Engineering graduate (2025); went straight into entrepreneurship.',
+    'Hands-on with 300+ AI tools (70+ premium), with 20+ projects delivered.',
+    'Learned AI and tech through US-based communities, then freelanced.',
+    '3.2M+ Reel plays on @aiwithrakshith.global, with a top Reel at 1.6M.',
+    'Teaching AI in Kannada for Karnataka creators, SME owners and students.',
   ],
-  services: ['AI agents & voice agents', 'Workflow automation (n8n, MCP)', 'UI/UX research & design', 'Web apps, PWAs & React Native apps', 'Brand identity'],
+  stats: [
+    { value: 300, decimals: 0, suffix: '+', label: 'AI tools, hands-on' },
+    { value: 20, decimals: 0, suffix: '+', label: 'Projects delivered' },
+    { value: 3.2, decimals: 1, suffix: 'M+', label: 'Reel plays' },
+    { value: 1.6, decimals: 1, suffix: 'M', label: 'Top Reel' },
+  ],
   github: 'https://github.com/aiwithrakshi-dev',
-  // Add your links here, e.g. { label: 'Instagram', url: 'https://instagram.com/…' }
-  socials: [] as { label: string; url: string }[],
+  socials: [
+    { label: 'Instagram (Kannada) · @AIwithRakshith', url: 'https://instagram.com/aiwithrakshi' },
+    { label: 'Company · @mydesignnexus.in', url: 'https://instagram.com/mydesignnexus.in' },
+  ] as { label: string; url: string }[],
   email: '', // e.g. 'hello@yourdomain.com'
+  motto: 'Building AI for India, from Karnataka.',
 }
 
-export type Status = 'Live' | 'Active' | 'Prototype' | 'Pre-launch' | 'Publishing' | 'In design'
+export const areas = [
+  { icon: 'bot', title: 'AI Automation', text: 'Workflow automation and business systems for SMEs', accent: '#c084fc' },
+  { icon: 'bell', title: 'AI Calling Agents', text: 'Voice agents for sales, support and lead handling', accent: '#34d399' },
+  { icon: 'wifi', title: 'Web & App Development', text: 'Websites, PWAs and mobile apps', accent: '#22d3ee' },
+  { icon: 'fingerprint', title: 'Custom Software', text: 'Tailored tools for real business problems', accent: '#60a5fa' },
+  { icon: 'night', title: 'AI Content Production', text: 'AI video, UGC ads and visual content', accent: '#f472b6' },
+  { icon: 'ai', title: 'AI Education', text: 'Kannada-first AI learning content', accent: '#facc15' },
+]
 
-export const projects: {
+export const products: {
   name: string
   kind: string
   blurb: string
-  status: Status
-  stack: string[]
+  status: string
   accent: string
-  link?: string
 }[] = [
-  { name: 'ContentBrisk', kind: 'AI content studio', blurb: 'Research, scripts, voice, video, approvals and publishing for creators and agencies, planned week by week.', status: 'Pre-launch', stack: ['Lovable', 'Apify', 'Firecrawl', 'ElevenLabs', 'OpenRouter'], accent: '#c084fc' },
-  { name: 'AdSynthra', kind: 'Ad intelligence', blurb: 'AI advertising intelligence and creative strategy across Meta, Google and more.', status: 'Prototype', stack: ['React', 'Vite', 'Supabase'], accent: '#22d3ee' },
-  { name: 'Nexa voice agent', kind: 'AI calling', blurb: 'An ElevenLabs voice agent on a Twilio number that runs batch calls for the team.', status: 'Live', stack: ['ElevenLabs', 'Twilio'], accent: '#34d399' },
-  { name: 'PowerdTask', kind: 'Productivity app', blurb: 'A to-do and productivity app on its way to iOS and Android, with refer-and-earn and an admin panel.', status: 'Publishing', stack: ['React Native', 'Next.js'], accent: '#f472b6' },
-  { name: 'ScanNeya', kind: 'QR menus', blurb: 'QR digital menus and catalogs for Indian businesses.', status: 'Active', stack: ['PWA'], accent: '#fb923c' },
-  { name: 'Pikorbit', kind: 'Local commerce', blurb: 'Order from your local kirana store at home; the store packs it and you pick it up.', status: 'In design', stack: ['Mobile app'], accent: '#facc15' },
-  { name: 'My AI Stack', kind: 'Showcase', blurb: 'The 91 AI tools I use every day, with official logos, search and categories.', status: 'Live', stack: ['React'], accent: '#a78bfa', link: '#stack' },
+  { name: 'ContentBrisk', kind: 'Content management', blurb: 'A content management system for creators and brands.', status: 'Launching soon', accent: '#c084fc' },
+  { name: 'Adsynthra', kind: 'AI ad platform', blurb: 'An AI-powered ad platform.', status: 'Coming soon', accent: '#22d3ee' },
 ]
 
 export const process = [

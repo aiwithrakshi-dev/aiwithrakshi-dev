@@ -1,4 +1,4 @@
-# My AI Stack
+# Fuck Off
 
 The 91 premium AI tools I use, on one page, by [@AIwithRakshith](https://github.com/aiwithrakshi-dev).
 

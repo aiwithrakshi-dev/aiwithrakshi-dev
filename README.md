@@ -4,21 +4,38 @@
   </a>
 </p>
 
-# Hi, I'm Rakshith 👋
+<p align="center">
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/"><img src="assets/about/intro.svg" alt="Hi, I'm Rakshith 👋 AI Generalist &amp; Founder, MyDesignNexus. I build AI systems, automations and AI content, and teach AI in Kannada. 📍 Hassan &amp; Bengaluru, Karnataka, India" width="100%"></a>
+</p>
 
-### AI Generalist & Founder, MyDesignNexus
-I build AI systems, automations and AI content, and teach AI in Kannada.
-
-📍 Hassan & Bengaluru, Karnataka, India
-
-<p>
+<p align="center">
   <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/"><img src="https://img.shields.io/badge/Open%20my%20portfolio-C084FC?style=for-the-badge&logo=react&logoColor=0b0d12" alt="Open my portfolio"></a>
   <img src="https://komarev.com/ghpvc/?username=aiwithrakshi-dev&label=Profile%20views&color=22d3ee&style=for-the-badge" alt="Profile views">
 </p>
 
----
-
 ## 🚀 About Me
+
+<p align="center">
+  <a href="https://instagram.com/mydesignnexus.in"><img src="assets/about/founder.svg" alt="🏢 Founder &amp; CEO of MyDesignNexus, an MSME-registered AI solutions company" width="49%"></a>
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/#about"><img src="assets/about/graduate.svg" alt="🎓 Computer Science Engineering graduate (2025); went straight into entrepreneurship" width="49%"></a>
+</p>
+<p align="center">
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/#stack"><img src="assets/about/tools.svg" alt="🧠 Hands-on with 300+ AI tools (70+ premium), with 20+ projects delivered" width="49%"></a>
+  <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/#about"><img src="assets/about/journey.svg" alt="🌍 Learned AI and tech through US-based communities, then freelanced" width="49%"></a>
+</p>
+<p align="center">
+  <a href="https://instagram.com/aiwithrakshith.global"><img src="assets/about/reels.svg" alt="🎬 3.2M+ Reel plays on @aiwithrakshith.global, with a top Reel at 1.6M" width="49%"></a>
+  <a href="https://instagram.com/aiwithrakshi"><img src="assets/about/kannada.svg" alt="🗣️ Teaching AI in Kannada for Karnataka creators, SME owners and students" width="49%"></a>
+</p>
+
+<details>
+<summary><b>Read as text</b></summary>
+
+<br>
+
+**Hi, I'm Rakshith 👋** · AI Generalist & Founder, MyDesignNexus
+I build AI systems, automations and AI content, and teach AI in Kannada.
+📍 Hassan & Bengaluru, Karnataka, India
 
 - 🏢 Founder & CEO of **MyDesignNexus**, an MSME-registered AI solutions company
 - 🎓 Computer Science Engineering graduate (2025); went straight into entrepreneurship
@@ -27,9 +44,7 @@ I build AI systems, automations and AI content, and teach AI in Kannada.
 - 🎬 **3.2M+ Reel plays** on @aiwithrakshith.global, with a top Reel at 1.6M
 - 🗣️ Teaching AI in Kannada for Karnataka creators, SME owners and students
 
-<p align="center">
-  <img src="assets/stats.svg" alt="300+ AI tools, 20+ projects delivered, 3.2M+ Reel plays, top Reel 1.6M" width="100%">
-</p>
+</details>
 
 ---
 

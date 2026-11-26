@@ -3,14 +3,14 @@
 export const profile = {
   name: 'Rakshith',
   handle: 'aiwithrakshi-dev',
-  role: 'AI Generalist & Founder, MyDesignNexus',
-  tagline: 'I build AI systems, automations and AI content, and teach AI in Kannada.',
+  role: 'Founder & CEO, MyDesignNexus · AI Generalist',
+  tagline: 'I help businesses put AI to work: automation, AI calling agents, custom software and AI-produced content.',
   location: 'Hassan & Bengaluru, Karnataka, India',
   disciplines: ['AI', 'APPS', 'CONTENT'],
   about: [
     'Founder & CEO of MyDesignNexus, an MSME-registered AI solutions company.',
     'Computer Science Engineering graduate (2025); went straight into entrepreneurship.',
-    'Hands-on with 300+ AI tools (70+ premium), with 20+ projects delivered.',
+    'Hands-on with 300+ AI tools (91 premium), with 20+ projects delivered.',
     'Learned AI and tech through US-based communities, then freelanced.',
     '3.2M+ Reel plays on @aiwithrakshi.global, with a top Reel at 1.6M.',
     'Teaching AI in Kannada for Karnataka creators, SME owners and students.',
@@ -23,7 +23,10 @@ export const profile = {
   ],
   github: 'https://github.com/aiwithrakshi-dev',
   socials: [
+    { label: 'Website · aiwithrakshith.tech', url: 'https://aiwithrakshith.tech/' },
+    { label: 'Book a free 1:1 call', url: 'https://aiwithrakshith.tech/booking' },
     { label: 'Instagram (Kannada) · @AIwithRakshith', url: 'https://instagram.com/aiwithrakshi' },
+    { label: 'Instagram (Global) · @aiwithrakshi.global', url: 'https://www.instagram.com/aiwithrakshi.global' },
     { label: 'Company · @mydesignnexus.in', url: 'https://instagram.com/mydesignnexus.in' },
   ] as { label: string; url: string }[],
   email: '', // e.g. 'hello@yourdomain.com'

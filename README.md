@@ -24,7 +24,7 @@
   <a href="https://aiwithrakshi-dev.github.io/aiwithrakshi-dev/#about"><img src="assets/about/journey.svg" alt="🌍 Learned AI and tech through US-based communities, then freelanced" width="49%"></a>
 </p>
 <p align="center">
-  <a href="https://instagram.com/aiwithrakshith.global"><img src="assets/about/reels.svg" alt="🎬 3.2M+ Reel plays on @aiwithrakshith.global, with a top Reel at 1.6M" width="49%"></a>
+  <a href="https://www.instagram.com/aiwithrakshi.global"><img src="assets/about/reels.svg" alt="🎬 3.2M+ Reel plays on @aiwithrakshi.global, with a top Reel at 1.6M" width="49%"></a>
   <a href="https://instagram.com/aiwithrakshi"><img src="assets/about/kannada.svg" alt="🗣️ Teaching AI in Kannada for Karnataka creators, SME owners and students" width="49%"></a>
 </p>
 
@@ -41,7 +41,7 @@ I build AI systems, automations and AI content, and teach AI in Kannada.
 - 🎓 Computer Science Engineering graduate (2025); went straight into entrepreneurship
 - 🧠 Hands-on with **300+ AI tools** (70+ premium), with **20+ projects** delivered
 - 🌍 Learned AI and tech through US-based communities, then freelanced
-- 🎬 **3.2M+ Reel plays** on @aiwithrakshith.global, with a top Reel at 1.6M
+- 🎬 **3.2M+ Reel plays** on @aiwithrakshi.global, with a top Reel at 1.6M
 - 🗣️ Teaching AI in Kannada for Karnataka creators, SME owners and students
 
 </details>

@@ -12,7 +12,7 @@ export const profile = {
     'Computer Science Engineering graduate (2025); went straight into entrepreneurship.',
     'Hands-on with 300+ AI tools (70+ premium), with 20+ projects delivered.',
     'Learned AI and tech through US-based communities, then freelanced.',
-    '3.2M+ Reel plays on @aiwithrakshith.global, with a top Reel at 1.6M.',
+    '3.2M+ Reel plays on @aiwithrakshi.global, with a top Reel at 1.6M.',
     'Teaching AI in Kannada for Karnataka creators, SME owners and students.',
   ],
   stats: [
